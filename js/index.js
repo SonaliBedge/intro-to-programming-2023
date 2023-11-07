@@ -17,6 +17,7 @@ for(let i = 0; i < skills.length; i++){
     skillsList.appendChild(li);
 }
 
+
 const messageSection = document.querySelector("#messages");
 messageSection.style.display = "none";
 
@@ -85,3 +86,4 @@ messageForm.addEventListener("submit", (e) => {
 });
 
 //Display Messages in List
+
