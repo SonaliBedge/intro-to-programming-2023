@@ -1,0 +1,125 @@
+  /* Change the background color of the page body */
+  body {
+    background-color: #f1eae3;
+   
+  }
+  
+/* Change the default text color and Customize the font family */
+div {
+    color : #200000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Add spacing (padding/margin) between sections */
+section {
+    padding: 15px;
+    border: 2px solid #aaa2e7;
+    margin: 10px;
+}
+
+/* Change the font size, weight, and color of all headings */
+h1,h2 {
+    font-size: 30px;
+    color: #1a1839;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 0.1rem;
+}
+
+/* Transform the "Experience" list items into styled blocks */
+.experience, .skills {
+    display: block;
+}
+
+/* Style the "leave a message form elements */
+.leaveMessage {
+    font-size: large;
+    color: #200000;
+    /* padding: 5px; */
+    /* border: 2px dashed #7768e8; */
+}
+
+/* Add spacing (padding/margin) between form fields*/
+form {
+    padding: 15px;
+    margin: 5px;  
+}
+
+/* Transform the "Messages" list items into styled blocks and customize the button(s) */
+#messages {
+    padding: 10px;
+    margin: 5px;
+    border: 3px dashed #8777ec;
+}
+/* Change the spacing and background color of the footer */
+footer {
+    background-color: #f1eae3;
+    font-size: 1.125rem;
+    padding: 10px;
+    border: 2px solid #aaa2e7;
+    margin: 10px;
+}
+
+/* Change font size, padding, border, etc. of inputs and textarea */
+form  textarea {
+    padding: 5px;
+    margin: 2px; 
+} 
+
+form input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+form label {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Change padding, background color, border, etc. of submit button */
+form button {
+    background-color: #170f51;
+    color: #f1eae3;
+    padding: 10px;
+    border: 2px solid #1945f3;
+   font-size: 15px;
+   border-radius: .3em;
+   margin-top: 5px;
+} 
+
+.experience li{
+    padding: 10px;
+    margin: 5px;
+    background-color: #e1e0ee;
+}
+
+header .item li{
+    display: inline;
+}
+.skill li {
+    display: inline;
+    border: 2px solid #3473f2;
+    padding: 10px;
+    margin: 5px;
+    border-radius: .3em;
+}
+ .heading li {
+    display: inline;
+ }
+ .about {
+    text-align: right;
+    font-size: 15px;
+ }
+ .about li {
+    display: inline;   
+ }
+ .image {
+    display: inline-block;
+ }
+ .image--small {
+    width:  50px;
+ }
+ .image--rounded {
+    border-radius: 1.9em;
+ }
+ 
