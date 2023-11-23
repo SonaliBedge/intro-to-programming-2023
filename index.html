@@ -2,7 +2,8 @@
 <!-- Document -->
 <!DOCTYPE html>
 <html lang="en">
-    <!-- Heed Element -->
+<!-- Heed Element -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,76 +11,113 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <!-- Body Element -->
-<body>    
-    <header>
-        <ul class="item">
-            <li><img class="image image--small image--rounded" src="sonaliPhoto.jpeg"  role="presentation"/> </li>
-            <li><h1>Sonali Bedge</h1></li>
-        </ul>
-    </div>        
+
+<body>
+    <header class="fixed-header">
+        <!-- Add a navigational header to your webpage  -->
+
+        <div class="left-list">
+            <ul>
+                <li class="item-list"><img class="image image--small image--rounded" src="sonaliPhoto.jpeg"
+                        role="presentation" /> </li>
+                <li class="item-list"><a href="#">Sonali Bedge</a></li>
+            </ul>
+        </div>
+        <div class="right-list">
+            <ul>
+                <li>
+                    <a href="#about-Section">About</a>
+                </li>
+                <li>
+                    <a href="#experience-Section">Experience</a>
+                </li>
+                <li>
+                    <a href="#Section-Skill">Skills</a>
+                </li>
+                <li>
+                    <a href="#contacts-Section">Contact</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
-    <div>
-            <!-- Semantic Markup -->
-        <section id="about">
+    <div class="main-div">
+        <!-- Semantic Markup -->
+        <section id="about-Section">
             <h1>About</h1>
             <p> &nbsp; &nbsp; &nbsp; &nbsp; Hello Everyone , My name is <em>Sonali Bedge</em>. I like to code.
-                After taking a break from my career to focus on family responsibilities, I am eager to return to the workforce and contribute to the development of cutting-edge software solutions. <br>
-                During my break, I have stayed up-to-date with industry developments and have honed my skills through online courses and personal projects.<br>
-                In my previous role as a <strong>software developer</strong> at Dots Info Systems(India), I developed expertise in several programming languages and frameworks, and successfully designed and implemented several software solutions that resulted in increased efficiency and productivity.<br> 
-                I am highly analytical, able to solve complex problems, hardworking and have a proven track record of delivering high-quality software solutions.  </p>
-                <a href="#">Get My Resume</a>
+                After taking a break from my career to focus on family responsibilities, I am eager to return to the
+                workforce and contribute to the development of cutting-edge software solutions. <br>
+                During my break, I have stayed up-to-date with industry developments and have honed my skills through
+                online courses and personal projects.<br>
+                In my previous role as a <strong>software developer</strong> at Dots Info Systems(India), I developed
+                expertise in several programming languages and frameworks, and successfully designed and implemented
+                several software solutions that resulted in increased efficiency and productivity.<br>
+                I am highly analytical, able to solve complex problems, hardworking and have a proven track record of
+                delivering high-quality software solutions. </p>
+            <a href="#">Get My Resume</a>
         </section>
-        <section id="experience">
+        <section id="experience-Section">
             <h1>Experience</h1>
             <nav>
                 <ul class="experience">
-                    <li><strong>Online Shopping Web Portal </strong> <br>at DOTS INFO SYSTEM(I)PVT LTD, MUMBAI, INDIA  (ASP.NET WITH C#.NET, AJAX,SQL SERVER)  - <em>June 2009 - Dec 2010</em></li>
-                    <li><strong>KBE Contest Kaun Banega Eklavya </strong><br>at MIKITA TECHNOLOGIES PVT LTD, PUNE,INDIA   (VISUAL BASIC 6.0 AND SQL SEERVER)  - <em>Mar 2008 - Dec 2008</em></li>
-                    <li><strong>Inventory System, Billing System, Payroll, CRM </strong><br>at CLARIANT TECHNOLOGIES PVT LTD, PUNE,INDIA  (VISUAL BASIC 6.0 AND SQL SEERVER) - <em>June 2007 - Feb 2008</em></li>
-
+                    <li class="grid-item"><strong>Online Shopping Web Portal </strong> <br>at DOTS INFO SYSTEM(I)PVT
+                        LTD, MUMBAI, INDIA (ASP.NET WITH C#.NET, AJAX,SQL SERVER) - <em>June 2009 - Dec 2010</em></li>
+                    <li class="grid-item"><strong>KBE Contest Kaun Banega Eklavya </strong><br>at MIKITA TECHNOLOGIES
+                        PVT LTD, PUNE,INDIA (VISUAL BASIC 6.0 AND SQL SEERVER) - <em>Mar 2008 - Dec 2008</em></li>
+                    <li class="grid-item"><strong>Inventory System, Billing System, Payroll, CRM </strong><br>at
+                        CLARIANT TECHNOLOGIES PVT LTD, PUNE,INDIA (VISUAL BASIC 6.0 AND SQL SEERVER) - <em>June 2007 -
+                            Feb 2008</em></li>
                 </ul>
             </nav>
         </section>
         <!-- Add Skills Section -->
-        <section id="skills">
-            
+        <section id="Section-Skill">
             <h2>Skills</h2>
-
-            <ul class="skill">
-
-            </ul>
-            </section>
-            <section id="contact">
-            <h2>Connect</h2>   
-            <p>Feel free to reach out if you want to build something together, have a queation, or just want to connect.</p>
-            <a href="mailto:bedgesonali@yahoo.com" target="_blank"><img width="40" height="40" src="https://img.icons8.com/stickers/100/secured-letter.png" alt="secured-letter"/></a>
-            <a href="https://github.com/SonaliBedge" target="_blank"><img alt="GitHub" src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
-            <a href="https://www.linkedin.com/in/sonali-bedge-488a07155/" target="_blank"><img alt="linkedin" src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"></a>
+            <div class="skills">
+                <ul class="list"> </ul>
+            </div>
+        </section>
+        <section id="contacts-Section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out if you want to build something together, have a queation, or just want to connect.
+            </p>
+            <a href="mailto:bedgesonali@yahoo.com" target="_blank"><img width="40" height="40"
+                    src="https://img.icons8.com/stickers/100/secured-letter.png" alt="secured-letter" /></a>
+            <a href="https://github.com/SonaliBedge" target="_blank"><img alt="GitHub"
+                    src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
+            <a href="https://www.linkedin.com/in/sonali-bedge-488a07155/" target="_blank"><img alt="linkedin"
+                    src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"></a>
         </section>
         <!-- Add Footer Element -->
         <footer>
             <!-- Create Message Form -->
-            <section class="leaveMessage"><h2>Leave a Message</h2>
-                <form name="leave_message" id="formMsg">
-                    <label for="usersName">Name</label><br>
-                    <input type="text" id="usersName" name="usersName" placeholder="Enter your name" required><br>
-                    <label for="usersEmail">Email Address</label><br>
-                    <input type="email" name="usersEmail" id="usersEmail" placeholder="username@example.com" required><br>
-                    <label for="usersMessage">Message</label><br>
-                    <textarea name="usersMessage" id="usersMessage" rows="3" cols="24"></textarea><br>
-                    <button type="submit">Submit</button>
-                </form>
+            <section>
+                <h2>Leave a Message</h2>
+                <div class="form-container">
+                    <form name="leave_message" id="formMsg">
+                        <label for="usersName">Name</label><br>
+                        <input type="text" id="usersName" name="usersName" placeholder="Enter your name" required><br>
+                        <label for="usersEmail">Email Address</label><br>
+                        <input type="email" name="usersEmail" id="usersEmail" placeholder="username@example.com"
+                            required><br>
+                        <label for="usersMessage">Message</label><br>
+                        <textarea name="usersMessage" id="usersMessage" rows="3" cols="24"></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </section>
-            
+
             <!-- Add Message List Section -->
             <section id="messages">
                 <h2>Messages</h2>
                 <ul></ul>
             </section>
-            <p>&copy; Sonali Bedge 2023</p>
+            <div class="footer1"> </div>
         </footer>
     </div>
     <script src="js/index.js" type="text/javascript"></script>
 
 </body>
+
 </html>
