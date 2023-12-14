@@ -86,7 +86,7 @@ messageForm.addEventListener("submit", (e) => {
     messageForm.reset();
 });
 
-// Using Fetch GitHub Repositories using Fetch API 
+// Fetch GitHub Repositories using Fetch API 
 fetch('https://api.github.com/users/SonaliBedge/repos')
 .then(response => { 
     if(!response.ok){
