@@ -86,25 +86,51 @@ messageForm.addEventListener("submit", (e) => {
     messageForm.reset();
 });
 
-//Fetch GitHub Repositories
-var githubRequest = new XMLHttpRequest();
-githubRequest.open('GET','https://api.github.com/users/SonaliBedge/repos');
-githubRequest.send();
-
-// Handle Response from Server
-githubRequest.addEventListener('load', function(event) {
-    var repositories = JSON.parse(this.response);
-    console.log(repositories);
+// Using Fetch GitHub Repositories using Fetch API 
+fetch('https://api.github.com/users/SonaliBedge/repos')
+.then(response => { 
+    if(!response.ok){
+        throw new Error('Network response was not ok')
+    }
+    return response.json(); } )
+.then(response => {
+    
     //Display Repositories in List
     const projectSection = document.getElementById('projects');
     const projectList = projectSection.querySelector('ul');
-    // console.log(projectList);
-    for(var i = 0; i < repositories.length; i++){
+    
+    for(var i = 0; i < response.length; i++){
         const project = document.createElement('li');
         project.style.color = "red";
         project.style.fontWeight = "bold";
-        project.innerHTML = `<a href='${repositories[i]['html_url']}' target="_blank">${repositories[i]['name']}</a> ${repositories[i]['description']} ${repositories[i]['created_at']}`;
+        project.innerHTML = `<a href='${response[i]['html_url']}' target="_blank">${response[i]['name']}</a> ${response[i]['description']} ${response[i]['created_at']}`;
         projectList.appendChild(project);
     }
+})
+.catch(function(error){
+    console.error('Error during fetch operation:', error);
 });
+
+
+// //Fetch GitHub Repositories
+// var githubRequest = new XMLHttpRequest();
+// githubRequest.open('GET','https://api.github.com/users/SonaliBedge/repos');
+// githubRequest.send();
+
+// // Handle Response from Server
+// githubRequest.addEventListener('load', function(event) {
+//     var repositories = JSON.parse(this.response);
+//     console.log(repositories);
+//     //Display Repositories in List
+//     const projectSection = document.getElementById('projects');
+//     const projectList = projectSection.querySelector('ul');
+//     // console.log(projectList);
+//     for(var i = 0; i < repositories.length; i++){
+//         const project = document.createElement('li');
+//         project.style.color = "red";
+//         project.style.fontWeight = "bold";
+//         project.innerHTML = `<a href='${repositories[i]['html_url']}' target="_blank">${repositories[i]['name']}</a> ${repositories[i]['description']} ${repositories[i]['created_at']}`;
+//         projectList.appendChild(project);
+//     }
+// });
 
