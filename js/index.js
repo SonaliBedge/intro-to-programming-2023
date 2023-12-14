@@ -1,4 +1,5 @@
 // Sonali Bedge
+
 // Insert Copyright Text in Footer
 let today = new Date();
 let thisYear = today.getFullYear();
@@ -85,5 +86,25 @@ messageForm.addEventListener("submit", (e) => {
     messageForm.reset();
 });
 
-//Display Messages in List
+//Fetch GitHub Repositories
+var githubRequest = new XMLHttpRequest();
+githubRequest.open('GET','https://api.github.com/users/SonaliBedge/repos');
+githubRequest.send();
+
+// Handle Response from Server
+githubRequest.addEventListener('load', function(event) {
+    var repositories = JSON.parse(this.response);
+    console.log(repositories);
+    //Display Repositories in List
+    const projectSection = document.getElementById('projects');
+    const projectList = projectSection.querySelector('ul');
+    // console.log(projectList);
+    for(var i = 0; i < repositories.length; i++){
+        const project = document.createElement('li');
+        project.style.color = "red";
+        project.style.fontWeight = "bold";
+        project.innerHTML = `<a href='${repositories[i]['html_url']}' target="_blank">${repositories[i]['name']}</a> ${repositories[i]['description']} ${repositories[i]['created_at']}`;
+        projectList.appendChild(project);
+    }
+});
 
