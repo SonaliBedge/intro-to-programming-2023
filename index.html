@@ -8,18 +8,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sonali Bedge</title>
+    <link rel="icon" href="Logo-img.jfif" border-radius="50%" type="image/jpg">
     <link rel="stylesheet" href="css/index.css">
+
 </head>
 <!-- Body Element -->
 
 <body>
     <header class="fixed-header">
         <!-- Add a navigational header to your webpage  -->
-
+        <!-- <div class="menu-toggle" onclick="toggleNav()">&#9776</div>
+        <nav class="nav1"> 
+            <a href="#about-Section">About</a>
+            <a href="#experience-Section">Experience</a>
+            <a href="#Section-Skill">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#leave-message">Leave a Message</a>
+            <a href="#contacts-Section">Contact Me</a>
+        </nav> -->
         <div class="left-list">
             <ul>
                 <li class="item-list"><img class="image image--small image--rounded" src="sonaliPhoto.jpeg"
-                        role="presentation" /> </li>
+                        role="presentation" alt="Sonali's Profile Picture" /> </li>
                 <li class="item-list"><a href="#">Sonali Bedge</a></li>
             </ul>
         </div>
@@ -35,16 +45,24 @@
                     <a href="#Section-Skill">Skills</a>
                 </li>
                 <li>
-                    <a href="#contacts-Section">Contact</a>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#leave-message">Leave a Message</a>
+                </li>
+                <li>
+                    <a href="#contacts-Section">Contact Me</a>
                 </li>
             </ul>
         </div>
 
     </header>
     <div class="main-div">
+
         <!-- Semantic Markup -->
         <section id="about-Section">
-            <h1>About</h1>
+            <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <h1 class="section-margin">About</h1>
             <p> &nbsp; &nbsp; &nbsp; &nbsp; Hello Everyone , My name is <em>Sonali Bedge</em>. I like to code.
                 After taking a break from my career to focus on family responsibilities, I am eager to return to the
                 workforce and contribute to the development of cutting-edge software solutions. <br>
@@ -55,10 +73,11 @@
                 several software solutions that resulted in increased efficiency and productivity.<br>
                 I am highly analytical, able to solve complex problems, hardworking and have a proven track record of
                 delivering high-quality software solutions. </p>
-            <a href="#">Get My Resume</a>
+            <a href="SonaliBedgeResume.docx" download="Sonali's Resume">Get My Resume</a>
         </section>
         <section id="experience-Section">
-            <h1>Experience</h1>
+            <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <h1 class="section-margin">Experience</h1>
             <nav>
                 <ul class="experience">
                     <li class="grid-item"><strong>Online Shopping Web Portal </strong> <br>at DOTS INFO SYSTEM(I)PVT
@@ -73,42 +92,50 @@
         </section>
         <!-- Add Skills Section -->
         <section id="Section-Skill">
-            <h2>Skills</h2>
+            <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <h2 class="section-margin">Skills</h2>
             <div class="skills">
                 <ul class="list"> </ul>
             </div>
         </section>
         <!-- Add Project Section -->
         <section id="projects">
-            <h2>Projects</h2>
+            <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <h2 class="section-margin">Projects</h2>
             <ul></ul>
         </section>
         <section id="contacts-Section">
-            <h2>Contact</h2>
+            <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+            <h2 class="section-margin">Contact</h2>
             <p>Feel free to reach out if you want to build something together, have a queation, or just want to connect.
             </p>
             <a href="mailto:bedgesonali@yahoo.com" target="_blank"><img width="40" height="40"
-                    src="https://img.icons8.com/stickers/100/secured-letter.png" alt="secured-letter" /></a>
+                    src="mail_img.png" alt="secured-letter" /></a>
             <a href="https://github.com/SonaliBedge" target="_blank"><img alt="GitHub"
-                    src="https://img.icons8.com/doodle/40/000000/github--v1.png"></a>
+                    src="github--v1.png"></a>
             <a href="https://www.linkedin.com/in/sonali-bedge-488a07155/" target="_blank"><img alt="linkedin"
-                    src="https://img.icons8.com/doodle/40/000000/linkedin--v2.png"></a>
+                    src="linkedin--v2.png"></a>
         </section>
         <!-- Add Footer Element -->
         <footer>
             <!-- Create Message Form -->
-            <section>
-                <h2>Leave a Message</h2>
+            <section id="leave-message">
+                <div class="section-heading">&nbsp; &nbsp; &nbsp; &nbsp;</div>
+                <h2 class="section-margin">Leave a Message</h2>
                 <div class="form-container">
-                    <form name="leave_message" id="formMsg">
-                        <label for="usersName">Name</label><br>
-                        <input type="text" id="usersName" name="usersName" placeholder="Enter your name" required><br>
-                        <label for="usersEmail">Email Address</label><br>
-                        <input type="email" name="usersEmail" id="usersEmail" placeholder="username@example.com"
-                            required><br>
-                        <label for="usersMessage">Message</label><br>
-                        <textarea name="usersMessage" id="usersMessage" rows="3" cols="24"></textarea><br>
-                        <button type="submit">Submit</button>
+                    <form name="leave_message" id="formMsg" autocomplete="on">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label for="usersName">Name</label><br>
+                            <input type="text" id="usersName" name="usersName" placeholder="Enter your name"
+                                autocomplete="username" required><br>
+                            <label for="usersEmail">Email Address</label><br>
+                            <input type="email" name="usersEmail" id="usersEmail" placeholder="username@example.com"
+                                autocomplete="email" required><br>
+                            <label for="usersMessage">Message</label><br>
+                            <textarea name="usersMessage" id="usersMessage" rows="3" cols="24"></textarea><br>
+                            <button type="submit">Submit</button>
+                        </fieldset>
                     </form>
                 </div>
             </section>
@@ -118,8 +145,20 @@
                 <h2>Messages</h2>
                 <ul></ul>
             </section>
-            <div class="footer1"> </div>
+            <div class="footer_container">
+
+                <div class="footer1">
+                </div>
+                <div>
+                    <a href="mailto:bedgesonali@yahoo.com" target="_blank"><img width="40" height="40"
+                            src="mail_img.png" alt="secured-letter" /></a>
+                    <a href="https://github.com/SonaliBedge" target="_blank"><img width="40" height="40" alt="GitHub"
+                            src="github--v1.png"></a>
+                    <a href="https://www.linkedin.com/in/sonali-bedge-488a07155/" target="_blank"><img width="40"
+                            height="40" alt="linkedin" src="linkedin--v2.png"></a>
+                </div>
         </footer>
+    </div>
     </div>
     <script src="js/index.js" type="text/javascript"></script>
 
