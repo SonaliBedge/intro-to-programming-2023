@@ -30,6 +30,18 @@ for (let i = 0; i < skills.length; i++) {
 const messageSection = document.querySelector("#messages");
 messageSection.style.display = "none";
 
+//Toggle Dark Mode
+function myfunction() {
+    let elehead = document.querySelector('.fixed-header')
+    let elebody = document.querySelector('body')
+    elebody.classList.toggle("dark-mode");
+    elehead.classList.toggle("dark-mode");
+    let eleme = document.querySelectorAll('section');
+    eleme.forEach(section => {
+        section.classList.toggle("dark-mode");
+    });
+    
+}
 // Handling Message Form Submit
 const messageForm = document.querySelector('[name="leave_message"]');
 messageForm.addEventListener("submit", (e) => {
@@ -113,7 +125,9 @@ fetch("https://api.github.com/users/SonaliBedge/repos")
       const project = document.createElement("li");
       project.style.color = "red";
       project.style.fontWeight = "bold";
-      project.innerHTML = `<a href='${response[i]["html_url"]}' target="_blank">${response[i]["name"]}</a> ${response[i]["description"]} ${response[i]["created_at"]}`;
+      project.innerHTML = `<a href='${response[i]["html_url"]}' target="_blank">
+      Project Name : ${response[i]["name"]}</a>
+       <p>Description : ${response[i]["description"] || 'Personal Portfolio Website'}.</p><p>   Created Date : ${response[i]["created_at"]}</p>`;
       projectList.appendChild(project);
     }
   })
