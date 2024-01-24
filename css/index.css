@@ -9,6 +9,7 @@
       align-items: center;
       justify-content: center;
   }
+  
   .main-div {
     margin-top: 30px;
     padding-top: 30px;
@@ -116,7 +117,7 @@
   /* Change the spacing and background color of the footer */
   footer {
       background-color: #f1eae3;
-      font-size: 1.125rem;
+      font-size: 1rem;
       padding: 5px;
       border: 2px solid rgb(120, 7, 7);
       margin: 5px;
@@ -250,7 +251,12 @@
   form button:hover {
       background-color: #455ca0;
   }
-
+/* Toggle Dark Mode */
+  .dark-mode {
+    background: linear-gradient(rgb(18, 18, 17), #3f3535, #5f564f);
+    /* background-color : black; */
+    color: white;
+  }
   /* Use Media Queries to make sure the webpage is responsive for all device sizes(mobile, desktop,etc.) */
   /* and (max-device-width: 8000px)  */
   @media screen and (max-width: 700px) {
